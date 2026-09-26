@@ -1,0 +1,24 @@
+name = "nayeem-portfolio-api"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+
+# Free-tier KV namespace used to cache GitHub API responses so we stay
+# well under GitHub's rate limits and keep response times fast.
+# Create it with: wrangler kv namespace create GITHUB_CACHE
+# then paste the returned id below (and again under [env.production]).
+[[kv_namespaces]]
+binding = "GITHUB_CACHE"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+GITHUB_USERNAME = "masudrananayeem"
+ALLOWED_ORIGIN = "https://your-portfolio-domain.com"
+
+# Secrets (never put real values here — set via `wrangler secret put NAME`):
+#   GITHUB_TOKEN        — a GitHub PAT with no scopes (public read is enough
+#                          for REST; `read:user` if you also want private
+#                          contribution counts) — raises the rate limit from
+#                          60/hr (unauthenticated) to 5,000/hr.
+
+[env.production]
+name = "nayeem-portfolio-api-production"
