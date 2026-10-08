@@ -1,4 +1,4 @@
-name = "nayeem-portfolio-api"
+name = "my-portfolio-v-2-backend"
 main = "src/index.ts"
 compatibility_date = "2024-10-01"
 
@@ -10,7 +10,7 @@ compatibility_date = "2024-10-01"
 # then paste the returned id below (and again under [env.production]).
 [[kv_namespaces]]
 binding = "GITHUB_CACHE"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "358c8af9e68b4705a37bba97e2b79e6a"
 
 [vars]
 GITHUB_USERNAME = "masudrananayeem"
