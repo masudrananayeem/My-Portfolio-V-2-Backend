@@ -14,7 +14,7 @@ id = "358ac8f9e68b4705a37bba97e2b79e6a"
 
 [vars]
 GITHUB_USERNAME = "masudrananayeem"
-ALLOWED_ORIGIN = "https://your-portfolio-domain.com"
+ALLOWED_ORIGIN = "https://my-portfolio-web-7g2.pages.dev"
 
 # Secrets (never put real values here — set via `wrangler secret put NAME`):
 #   GITHUB_TOKEN        — a GitHub PAT with no scopes (public read is enough
